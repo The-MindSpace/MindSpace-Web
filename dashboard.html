@@ -27,8 +27,12 @@
 
     <!-- Grid Links -->
     <main>
-        <h1>Enter your Space</h1>
+        <h1 class="heading">Enter your Space</h1>
         <div class="grid">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
             <div></div>
             <div></div>
             <div></div>
@@ -93,6 +97,29 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();
+        // array on 10 random links fill them up
+        const links = [
+            "https://www.google.com/",
+            "https://www.google.com/",
+            "https://www.google.com/",
+            "https://www.google.com/",
+            "https://www.google.com/",
+            "https://www.google.com/",
+            "https://www.google.com/",
+            "https://www.google.com/",
+            "https://www.google.com/",
+            "https://www.google.com/",
+        ];
+
+        // add event listeners to all the grid items and map them to the links such on on clicking the grid item it opens the link
+        const gridItems = document.querySelectorAll(".grid div");
+        gridItems.forEach((item, index) => {
+            // randomize index between 0 to 
+            item.addEventListener("click", () => {
+                window.open(links[index]);
+            });
+        });
+
     </script>
 </body>
 </html>

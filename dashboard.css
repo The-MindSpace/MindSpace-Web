@@ -10,9 +10,6 @@ nav {
     height: 10vh;
     font-size: 3vh;
     font-weight: 900;
-    /* vertically align */
-    /* display: flex; */
-    /* align-items: center; */
     padding: 2rem;
 }
 
@@ -28,9 +25,6 @@ li {
 }
 
 .logo {
-    /* image size as navbar */
-    /* width: 40vh; */
-    /* display: none; */
-    /* height: 10vh; */
-    transform: translate(0, -20vh);
+    width: 40vh;
+    transform: translate(0, -16.5vh);
 }

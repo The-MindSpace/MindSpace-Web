@@ -8,7 +8,7 @@ body{
 /* ----------------background image-------------------------------- */
 .bg-img-land img{
     filter: blur(0.6458557588805167vh);
-    width: 197vh;
+    width: 200vh;
     height: 70vh;
 }
 

@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+nav {
+    background-color: #72D34F;
+    color: #fff;
+    height: 10vh;
+    font-size: 2vh;
+    font-weight: 900;
+    padding: 2rem;
+    position: absolute;
+    width: 100%;
+    top: 0;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+li {
+    height: 10vh;
+    transform: translateX(100px);
+    
+}
+
+.logo {
+    width: 40vh;
+    position: absolute;
+    left: 100%;
+    transform: translate(-70%, -16.7vh);
+}
+nav li a{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+nav li a:hover{
+    text-shadow: 1px 1px black;
+    font-size: 2.5vh;
+}
+.headings{
+    color: #72D34F;
+    text-shadow: 2px 2px black;
+    display: block;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 900;
+    transform: translateY(150px);
+}
+.app-content{
+    position: relative;
+    justify-content: center;
+    display: block;
+    margin-left: -200px;
+    margin-top: 200px;
+}
+.app-list-one, .app-list-two{
+    display: flex;
+    margin-top: 30px;
+}
+.app-content ul li{
+    box-sizing: border-box;
+    border: 10px solid #72D34F;
+    box-shadow: 5px 5px 5px 5px grey;
+    border-radius: 10px;
+    padding: 20px;
+    width: 250px;
+    height: 300px;
+}
+.app-content ul li:hover{
+    box-shadow: 5px 10px 25px 5px black;
+    cursor: pointer;
+}
+.app-content ul li img{
+    width: 230px;
+    height: 282px;
+    transform: translate(-20px,-21px);
+}
+.app-content ul li h3{
+    transform: translate(-30px,-310px);
+    color: white;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: 700;
+    font-size: 25px;
+    background: #72D34F;
+    width: 250px;
+    height: 40px;
+}
+.app-content ul li a{
+    text-decoration: none;
+}
+.art-content ul{
+    display: block;
+}
+
+.app-content ul li .book{
+    font-size: 15px;
+    padding: 0px 10px;
+}
+.col1{
+    flex-basis: 35%;
+}
+.col2{
+    flex-basis: 60%;
+}
+.col1, .col2{
+    font-size: 20px;
+    font-weight: 900;
+    color: white;
+}
+.foot{
+    display: flex;
+    margin-top: 100px;
+    background: #72D34F;
+    height: 550px;
+    padding: 35px;
+}
+.about p{
+    margin-top: 10px;
+    font-weight: 500;
+}
+.about ul li img{
+    width: 240px;
+    height: 180px;
+}
+.about ul{
+    transform: translateX(-300px);
+    margin-top: 20px;
+}
+.about ul li{
+    border: 8px solid white;
+    height: 195px;
+    border-radius: 10px;
+}
+.about ul li h3{
+    transform: translate(25px,-40px);
+}
+.about ul li a{
+    text-decoration: none;
+    color: white;
+}
+.about ul li:hover{
+    cursor: pointer;
+    box-shadow: 2px 2px 5px 5px rgb(77, 70, 70);
+}

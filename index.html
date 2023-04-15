@@ -10,23 +10,25 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- aos stylesheet -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>MindSpace</title>
 </head>
 <body>
     <!-------------------------------------------- Background image --------->
-    <div class="bg-img-land"><img src="pexels-pixabay-160994.jpg" ></div>
+    <div data-aos="fade-in" data-aos-duration="1000" class="bg-img-land"><img src="pexels-pixabay-160994.jpg" ></div>
 
     <!------------------------------------------------------- Heading and subtitle -->
     <div class="heading-subtitle">
         <div class="heading">
-            <h1 class="mind">Mind</h1>
-            <h1 class="space">Space</h1>
+            <h1 class="mind" data-aos="fade-right" data-aos-duration="1000">Mind</h1>
+            <h1 class="space" data-aos="fade-left" data-aos-duration="1000">Space</h1>
         </div>
         <img class="find" src="Finding peace of mind, one space at a time.png" alt="">
     </div>
 
     <!----------------------------------------------------------------------- QUOTES ------------------------------------------------------------>
-    <div class="wrapper">
+    <div data-aos="fade-in" data-aos-duration="1000" class="wrapper">
         <ul class="dynamic-text">
             <li><span> "Mental health is not a destination but a process. It's about how you drive, not where you're going." - Noam Shpancer</span></li>
             <li><span>"The greatest wealth is mental health." - Unknown</span></li>
@@ -50,8 +52,13 @@
     </div>
 
     <!--------------------------------------------------------------------- ENTRY BUTTON ---------------------------------------------------------------->
-    <div class="button">
+    <div data-aos="fade-up" data-aos-duration="1000" class="button">
         <button><a href="dashboard.html"> Click Here</a></button>
     </div>
+    <!-- aos script -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

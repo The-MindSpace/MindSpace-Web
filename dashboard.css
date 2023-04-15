@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+nav {
+    background-color: #72D34F;
+    color: #fff;
+    height: 10vh;
+    font-size: 3vh;
+    font-weight: 900;
+    /* vertically align */
+    /* display: flex; */
+    /* align-items: center; */
+    padding: 2rem;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+}
+
+li {
+    height: 10vh;
+}
+
+.logo {
+    /* image size as navbar */
+    /* width: 40vh; */
+    /* display: none; */
+    /* height: 10vh; */
+    transform: translate(0, -20vh);
+}

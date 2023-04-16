@@ -32,13 +32,13 @@
             <div>Moodpath</div>
             <div>Nyxo</div>
             <div>Sanvello</div>
-            <div>Quirk</div>
+            <div>Wrabit</div>
             <div>Three Good Things</div>
             <div>Calm</div>
             <div>HeadSpace</div>
             <div>Wake Up Time</div>
             <div>Anxio.us</div>
-            <div>Wrabit</div>
+            <div>Qwerty</div>
         </div>
         <h1 id="book" class="heading">Books</h1>
         <div class="grid">
@@ -118,34 +118,63 @@
             </ul>
         </div>
     </div>
-
+    
     <!-- aos script -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();
         // array on 10 random links fill them up
         const links = [
-            "https://mymoodpath.com/en/",
-            "https://leanpub.com/osmi-mental-wellness-in-the-workplace",
-            "https://www.mentalhealth.org.uk/campaigns/mental-health-awareness-week",
-            "https://www.7cups.com/",
-            "http://blackmindsmatter.co.uk/",
-            "https://osmihelp.org",
+            // apps
+            "https://www.mentalhealth.org.uk/campaigns/mental-health-awareness-week", // placeholder
+            "https://nyxo.app",
             "https://sanvello.com/",
-            "https://www.quirk.fyi/",
+            "https://writewithwrabit.com",
+            // "https://www.quirk.fyi/",
+            "https://three-good-things.glitch.me/",
+            "https://www.calm.com/",
+            "https://www.headspace.com/",
+            "http://wakeupti.me/",
             "http://weareanxio.us",
+            "https://www.mentalhealth.org.uk/campaigns/mental-health-awareness-week", // placeholder
+            // books
+            "https://leanpub.com/osmi-mental-wellness-in-the-workplace",
+            "https://leanpub.com/osmi-guidelines-for-employers",
+            "https://leanpub.com/osmi-mental-wellness-in-the-workplace",
+            "https://www.academia.edu/43313933/Ikigai_The_Japanese_Secret_to_a_Long_and_Happy_Life",
+            // organizations
+            "https://www.youtube.com/watch?v=Xfs03Va5pAY", // placeholder
+            "https://twitter.com/BrownSistersSpk",
+            "https://osmihelp.org",
+            "https://selfcare.tech",
+            "http://mhprompt.org",
+            "https://www.if-me.org",
+            "https://www.7cups.com/",
+            "https://therapykaro.com/",
+            "https://www.talkspace.com/",
+            "https://www.youtube.com/watch?v=Xfs03Va5pAY", // placeholder
+            // articles
+            "https://mymoodpath.com/en/",
+            "http://blackmindsmatter.co.uk/",
             "https://dev.to/desi/encouraging-wellness-in-a-remote-workplace-17m5",
             "https://freeonlinetherapy.org/",
             "https://www.reddit.com/r/catpictures/",
-            "http://wakeupti.me/",
             "https://dev.to/andrew/its-okay-to-not-be-okay",
-            "https://www.academia.edu/43313933/Ikigai_The_Japanese_Secret_to_a_Long_and_Happy_Life",
-            "https://www.if-me.org",
             "https://mentalhealthhackers.org/",
             "http://everybodyhasabrain.com/",
-            "https://twitter.com/BrownSistersSpk",
             "https://compassionatecoding.com",
-            "https://three-good-things.glitch.me/",
+            "https://mymoodpath.com/en/",
+            "https://www.youtube.com/watch?v=jGG6Wip_PGg",
+            "http://happyporchradio.com/season-4-episode-3-april-wensel/",
+            "https://www.youtube.com/watch?v=Xfs03Va5pAY", // do not remove this link :P
+            "http://ardentdev.com/011-jerk-programmer-compassionate-coder-april-wensel",
+            "https://mentalhealth-kb.net/",
+            "https://www.baatn.org.uk/",
+            "https://www.blacktherapistsrock.com/",
+            "https://www.youtube.com/watch?v=P4wWbHvNAvY",
+            "https://mobile.va.gov/app/ptsd-coach",
+            "https://play.google.com/store/apps/details?id=com.smilingmind.app&gl=US&pli=1",
+            "https://www.onlinecounselling4u.com/",
             "https://mymoodpath.com/en/",
             "https://writewithwrabit.com",
             "https://www.youtube.com/watch?v=jGG6Wip_PGg",
@@ -153,20 +182,10 @@
             "https://www.youtube.com/watch?v=Xfs03Va5pAY", // do not remove this link :P
             "http://ardentdev.com/011-jerk-programmer-compassionate-coder-april-wensel",
             "https://mentalhealth-kb.net/",
-            "https://www.talkspace.com/",
-            "http://mhprompt.org",
             "https://www.baatn.org.uk/",
             "https://www.blacktherapistsrock.com/",
-            "https://www.youtube.com/watch?v=P4wWbHvNAvY",
-            "https://nyxo.app",
-            "https://therapykaro.com/",
-            "https://www.headspace.com/",
-            "https://mobile.va.gov/app/ptsd-coach",
-            "https://play.google.com/store/apps/details?id=com.smilingmind.app&gl=US&pli=1",
-            "https://www.calm.com/",
-            "https://www.onlinecounselling4u.com/",
         ];
-
+        
         // add event listeners to all the grid items and map them to the links such on on clicking the grid item it opens the link
         const gridItems = document.querySelectorAll(".grid div");
         gridItems.forEach((item, index) => {

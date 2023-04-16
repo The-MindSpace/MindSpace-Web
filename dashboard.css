@@ -81,7 +81,7 @@ main {
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(10, 1fr);
+    grid-template-columns: repeat(8, 1fr);
     grid-gap: 2rem;
     padding : 4rem;
     /* background-color: black; */

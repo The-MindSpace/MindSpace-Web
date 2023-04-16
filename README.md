@@ -1,7 +1,5 @@
 # MindSpace
 
-## Finding peace of mind, one space at a time.
-
 ## Welcome to MindSpace, the mental health web app that helps you find peace of mind, one space at a time.
 
 ## About

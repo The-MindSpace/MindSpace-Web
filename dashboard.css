@@ -7,20 +7,25 @@
 body {
     width: 100vw;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 nav {
-    /* position: sticky; */
+    position: sticky;
     z-index: 20;
     background-color: #72D34F;
     color: #fff;
     height: 10vh;
-    font-size: 2vh;
+    font-size: 2.5vh;
     font-weight: 900;
     padding: 2rem;
-    position: absolute;
+    /* position: absolute; */
     width: 100%;
     top: 0;
+    /* blur navbar copy from SO*/
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
 }
 
 ul {
@@ -28,20 +33,25 @@ ul {
     align-items: center;
     list-style: none;
     width: 100%;
-    justify-content: space-evenly;
+    justify-content: flex-start;
 }
 
 li {
     height: 10vh;
     transform: translateX(100px);
-    
+    padding-right: 8vw;
+}
+
+/* select all li except first one */
+li:not(:first-child) {
+    transform: translateX(260px);
 }
 
 .logo {
     width: 40vh;
     position: absolute;
     left: 100%;
-    transform: translate(-70%, -16.7vh);
+    transform: translate(-67%, -16.7vh);
 }
 
 .foot {
@@ -56,10 +66,12 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    text-align: center;
+    /* height: 100vh; */
     width: 100%;
     /* background-color: #72D34F; */
-    margin-top: 15vh;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
 }
 
 .heading {
@@ -69,12 +81,14 @@ main {
 
 .grid {
     display: grid;
-    grid-template-rows: repeat(6);
     grid-template-columns: repeat(10, 1fr);
-    height: 100vh;
     grid-gap: 2rem;
     padding : 4rem;
     /* background-color: black; */
+}
+
+.grid:nth-of-type(2) {
+    grid-template-columns: repeat(4, 1fr);
 }
 
 .grid div {
@@ -90,6 +104,11 @@ main {
     outline: 3px solid #72D34F;
     outline-offset: 3px;
     border-radius: 1000px;
+    color: white;
+    font-size: 2vh;
+    font-weight: 700;
+    display: grid;
+    place-items: center;
 }
 
 .grid div:hover {
@@ -110,6 +129,7 @@ nav li a{
     text-decoration: none;
     color: white;
     cursor: pointer;
+    transition: ease 1s;
 }
 nav li a:hover{
     text-shadow: 1px 1px black;
@@ -136,6 +156,7 @@ nav li a:hover{
     margin-top: 20px;
 }
 .about ul li{
+    width: 255px;
     border: 8px solid white;
     height: 195px;
     border-radius: 10px;
@@ -150,4 +171,38 @@ nav li a:hover{
 .about ul li:hover{
     cursor: pointer;
     box-shadow: 2px 2px 5px 5px rgb(77, 70, 70);
+}
+
+/* media query */
+@media screen and (max-width: 768px) {
+    .grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .grid:nth-of-type(2) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .grid div {
+        width: calc(20vh / 6 + 50vw / 6);
+        height: calc(20vh / 6 + 50vw / 6);
+    }
+    .grid div:hover {
+        background-color: #72D34F;
+        transition: linear 0.1s;
+    }
+    .grid div:not(hover) {
+        background-color: white;
+        transition: linear background-color 2.5s;
+    }
+    .grid div::selection {
+        background-color: black;
+    }
+    .logo {
+        width: 40vh;
+        position: absolute;
+        left: 100%;
+        transform: translate(-40%, -16.7vh);
+    }
+    li:not(:first-child) {
+        display: none;
+    }
 }

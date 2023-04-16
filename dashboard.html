@@ -16,59 +16,85 @@
     <nav data-aos="fade-down" data-aos-duration="1000" >
         <ul>
             <li><img src="img/logo.png" alt="logo" class="logo"></li>
-            <!-- <li><a href="#app">Applications</a></li>
-            <li><a href="#article">Articles</a></li>
+            <li><a href="#app">Applications</a></li>
+            <li><a href="#art">Articles</a></li>
             <li><a href="#book">Books</a></li>
-            <li><a href="#conf">Conferences</a></li>    
-            <li><a href="#org">Organizations</a></li>    
-            <li><a href="#pod">Podcasts/Talks</a></li> -->
+            <li><a href="#conf">Talks and Podcasts</a></li>    
+            <li><a href="#org">Organizations</a></li>
         </ul>
     </nav>
 
     <!-- Grid Links -->
     <main>
-        <h1 class="heading">Enter your Space</h1>
+        <!-- <h1 class="heading">Enter your Space</h1> -->
+        <h1 id="app" class="heading">Applications</h1>
         <div class="grid">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
+            <div>Moodpath</div>
+            <div>Nyxo</div>
+            <div>Sanvello</div>
+            <div>Quirk</div>
+            <div>Three Good Things</div>
+            <div>Calm</div>
+            <div>HeadSpace</div>
+            <div>Wake Up Time</div>
+            <div>Anxio.us</div>
+            <div>Wrabit</div>
+        </div>
+        <h1 id="book" class="heading">Books</h1>
+        <div class="grid">
+            <div>Mental Health for Employees</div>
+            <div>Mental Health for Exectives</div>
+            <div>Mental Health for Wellness</div>
+            <div>Ikigai: The Blue Book</div>
+        </div>
+        <h1 id="org" class="heading">Organizations</h1>
+        <div class="grid">
+            <div>Black Minds Matter</div>
+            <div>Brown Sisters Speak</div>
+            <div>OSMI</div>
+            <div>SelfCare.tech</div>
+            <div>MHPrompt</div>
+            <div>If Me</div>
+            <div>7 Cups</div>
+            <div>Therapy Karo</div>
+            <div>TalkSpace</div>
+            <div>BAATN</div>
+        </div>
+        <h1 id="art" class="heading">Articles</h1>
+        <div class="grid">
+            <div>Click Here</div>
+            <div>Click Here</div>
+            <div>Click Here</div>
+            <div>Click Here</div>
+            <div>Click Here</div>
+            <div>Click Here</div>
+            <div>Click Here</div>
+            <div>Click Here</div>
+            <div>Click Here</div>
+            <div>Click Here</div>
+        </div>
+        <h1 id="conf" class="heading">Talks and Conferences</h1>
+        <div class="grid">
+            <div>Click Here</div>
+            <div>Click Here</div>
+            <div>Click Here</div>
+            <div>Click Here</div>
+            <div>Click Here</div>
+            <div>Click Here</div>
+            <div>Click Here</div>
+            <div>Click Here</div>
+            <div>Click Here</div>
+            <div>Click Here</div>
+            <div>Click Here</div>
+            <div>Click Here</div>
+            <div>Click Here</div>
+            <div>Click Here</div>
+            <div>Click Here</div>
+            <div>Click Here</div>
+            <div>Click Here</div>
+            <div>Click Here</div>
+            <div>Click Here</div>
+            <div>Click Here</div>
         </div>
     </main>
 
@@ -124,11 +150,11 @@
             "https://writewithwrabit.com",
             "https://www.youtube.com/watch?v=jGG6Wip_PGg",
             "http://happyporchradio.com/season-4-episode-3-april-wensel/",
+            "https://www.youtube.com/watch?v=Xfs03Va5pAY", // do not remove this link :P
             "http://ardentdev.com/011-jerk-programmer-compassionate-coder-april-wensel",
             "https://mentalhealth-kb.net/",
             "https://www.talkspace.com/",
             "http://mhprompt.org",
-            "https://www.youtube.com/watch?v=Xfs03Va5pAY", // do not remove this link :P
             "https://www.baatn.org.uk/",
             "https://www.blacktherapistsrock.com/",
             "https://www.youtube.com/watch?v=P4wWbHvNAvY",
@@ -149,6 +175,7 @@
                 // get style of the grid item and animate scale to 2 and then open the link
                 item.style.transform = "scale(25)";
                 item.style.zIndex = "10";
+                item.style.color = "#72D34F";
                 // wait for 0.5s and then open the link
                 setTimeout(() => {
                     window.open(links[index]);

@@ -16,12 +16,12 @@
     <nav data-aos="fade-down" data-aos-duration="1000" >
         <ul>
             <li><img src="logo.png" alt="logo" class="logo"></li>
-            <li><a href="#app">Applications</a></li>
+            <!-- <li><a href="#app">Applications</a></li>
             <li><a href="#article">Articles</a></li>
             <li><a href="#book">Books</a></li>
             <li><a href="#conf">Conferences</a></li>    
             <li><a href="#org">Organizations</a></li>    
-            <li><a href="#pod">Podcasts/Talks</a></li>
+            <li><a href="#pod">Podcasts/Talks</a></li> -->
         </ul>
     </nav>
 
@@ -99,16 +99,46 @@
         AOS.init();
         // array on 10 random links fill them up
         const links = [
-            "https://www.google.com/",
-            "https://www.google.com/",
-            "https://www.google.com/",
-            "https://www.google.com/",
-            "https://www.google.com/",
-            "https://www.google.com/",
-            "https://www.google.com/",
-            "https://www.google.com/",
-            "https://www.google.com/",
-            "https://www.google.com/",
+            "https://mymoodpath.com/en/",
+            "https://leanpub.com/osmi-mental-wellness-in-the-workplace",
+            "https://www.mentalhealth.org.uk/campaigns/mental-health-awareness-week",
+            "https://www.7cups.com/",
+            "http://blackmindsmatter.co.uk/",
+            "https://osmihelp.org",
+            "https://sanvello.com/",
+            "https://www.quirk.fyi/",
+            "http://weareanxio.us",
+            "https://dev.to/desi/encouraging-wellness-in-a-remote-workplace-17m5",
+            "https://freeonlinetherapy.org/",
+            "https://www.reddit.com/r/catpictures/",
+            "http://wakeupti.me/",
+            "https://dev.to/andrew/its-okay-to-not-be-okay",
+            "https://www.academia.edu/43313933/Ikigai_The_Japanese_Secret_to_a_Long_and_Happy_Life",
+            "https://www.if-me.org",
+            "https://mentalhealthhackers.org/",
+            "http://everybodyhasabrain.com/",
+            "https://twitter.com/BrownSistersSpk",
+            "https://compassionatecoding.com",
+            "https://three-good-things.glitch.me/",
+            "https://mymoodpath.com/en/",
+            "https://writewithwrabit.com",
+            "https://www.youtube.com/watch?v=jGG6Wip_PGg",
+            "http://happyporchradio.com/season-4-episode-3-april-wensel/",
+            "http://ardentdev.com/011-jerk-programmer-compassionate-coder-april-wensel",
+            "https://mentalhealth-kb.net/",
+            "https://www.talkspace.com/",
+            "http://mhprompt.org",
+            "https://www.youtube.com/watch?v=Xfs03Va5pAY", // do not remove this link :P
+            "https://www.baatn.org.uk/",
+            "https://www.blacktherapistsrock.com/",
+            "https://www.youtube.com/watch?v=P4wWbHvNAvY",
+            "https://nyxo.app",
+            "https://therapykaro.com/",
+            "https://www.headspace.com/",
+            "https://mobile.va.gov/app/ptsd-coach",
+            "https://play.google.com/store/apps/details?id=com.smilingmind.app&gl=US&pli=1",
+            "https://www.calm.com/",
+            "https://www.onlinecounselling4u.com/",
         ];
 
         // add event listeners to all the grid items and map them to the links such on on clicking the grid item it opens the link
@@ -116,7 +146,15 @@
         gridItems.forEach((item, index) => {
             // randomize index between 0 to 
             item.addEventListener("click", () => {
-                window.open(links[index]);
+                // get style of the grid item and animate scale to 2 and then open the link
+                item.style.transform = "scale(25)";
+                item.style.zIndex = "10";
+                // wait for 0.5s and then open the link
+                setTimeout(() => {
+                    window.open(links[index]);
+                    item.style.transform = "scale(1)";
+                    item.style.zIndex = "1";
+                }, 500);
             });
         });
 

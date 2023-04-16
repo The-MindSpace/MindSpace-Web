@@ -10,6 +10,8 @@ body {
 }
 
 nav {
+    /* position: sticky; */
+    z-index: 20;
     background-color: #72D34F;
     color: #fff;
     height: 10vh;
@@ -92,12 +94,12 @@ main {
 
 .grid div:hover {
     background-color: #72D34F;
-    transition: 0.3s;
+    transition: linear 0.1s;
 }
 
 .grid div:not(hover) {
     background-color: white;
-    transition: linear 2.5s;
+    transition: linear background-color 2.5s;
 }
 
 grid div::selection {

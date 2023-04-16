@@ -7,8 +7,8 @@ body{
 }
 /* ----------------background image-------------------------------- */
 .bg-img-land img{
-    filter: blur(0.6458557588805167vh);
-    width: 200vh;
+    filter: blur(0.7458557588805167vh);
+    width: 100vw;
     height: 70vh;
 }
 
@@ -25,6 +25,8 @@ body{
     font-size: 5.382131324004305vh;
     font-weight: 900;
     margin-top: -45.821313240043054vh;
+    /* text shadow blur*/
+    text-shadow: 0 0 0.2458557588805167vh white;
 }
 .mind{
     color: #72d34f;
@@ -57,7 +59,8 @@ body{
     list-style: none;
     font-size: 25px;
     font-weight: 500;
-    text-shadow: 1px 1px black;
+    /* text-shadow: 1px 1px black; */
+    font-weight: 700;
     position: relative;
     top: 0;
     line-height: 100px;
@@ -88,7 +91,7 @@ body{
 }
 button{
     background-color: #72d34f;
-    width: 200px;
+    width: 250px;
     height: 55px;
     border-style: none;
     border-radius: 12px;
@@ -96,9 +99,10 @@ button{
     font-size: 25px;
     font-weight: 700;
     cursor: pointer;
+    transition: 0.5s;
 }
 button:hover{
-    width: 220px;
+    width: 275px;
     height: 60px;
     background-color: green;
     border-radius: 16px;

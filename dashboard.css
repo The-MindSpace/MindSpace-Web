@@ -142,17 +142,19 @@ nav li a:hover{
     background: #72D34F;
     /* height: 550px; */
     padding: 35px;
+    /* justify-content: center; */
 }
 .about p{
     margin-top: 10px;
     font-weight: 500;
+    color: rgb(109, 92, 92);
 }
 .about ul li img{
     width: 240px;
     height: 180px;
 }
 .about ul{
-    transform: translateX(-300px);
+    transform: translateX(-100px);
     margin-top: 20px;
 }
 .about ul li{
@@ -162,7 +164,7 @@ nav li a:hover{
     border-radius: 10px;
 }
 .about ul li h3{
-    transform: translate(25px,-40px);
+    transform: translate(5px,-52px);
 }
 .about ul li a{
     text-decoration: none;
@@ -171,6 +173,9 @@ nav li a:hover{
 .about ul li:hover{
     cursor: pointer;
     box-shadow: 2px 2px 5px 5px rgb(77, 70, 70);
+}
+.about h1{
+    color: rgb(50, 108, 100);
 }
 
 /* media query */

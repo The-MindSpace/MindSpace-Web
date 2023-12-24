@@ -211,3 +211,61 @@ nav li a:hover{
         display: none;
     }
 }
+
+/* Add this CSS to your  file */
+
+.wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 800px; /* Adjust this value based on your design */
+    margin: 0 auto;
+}
+
+.dynamic-text {
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+}
+
+.dynamic-text li {
+    position: absolute;
+    width: 100%;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.dynamic-text li.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+.wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 800px; /* Adjust this value based on your design */
+    margin: 0 auto;
+}
+
+.dynamic-text {
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+}
+
+.dynamic-text li {
+    position: absolute;
+    width: 100%;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.dynamic-text li.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+.button {
+    margin-top: 20vh; /* Adjust this value to control the distance from the top */
+}

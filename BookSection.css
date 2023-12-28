@@ -1,0 +1,33 @@
+/* ... (other styles) ... */
+
+.grid:nth-of-type(3) {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.grid:nth-of-type(3) div {
+    width: calc(20vh / 6 + 50vw / 6);
+    height: calc(20vh / 6 + 50vw / 6);
+    background-color: #72D34F;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    transition: ease 0.4s;
+    outline: 3px solid #72D34F;
+    outline-offset: 3px;
+    border-radius: 1000px;
+    color: white;
+    font-size: 2vh;
+    font-weight: 700;
+    display: grid;
+    place-items: center;
+}
+
+.grid:nth-of-type(3) div:hover {
+    background-color: #72D34F;
+    transition: linear 0.1s;
+    cursor: pointer;
+}
+
+.grid:nth-of-type(3) div::selection {
+    background-color: black;
+}
+
+/* ... (other styles) ... */

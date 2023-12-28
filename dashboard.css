@@ -4,12 +4,15 @@
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
 }
+
+/* Body Styles */
 body {
     width: 100vw;
     overflow-x: hidden;
     scroll-behavior: smooth;
 }
 
+/* Navigation Styles */
 nav {
     position: sticky;
     z-index: 20;
@@ -19,13 +22,10 @@ nav {
     font-size: 2.5vh;
     font-weight: 900;
     padding: 2rem;
-    /* position: absolute; */
     width: 100%;
     top: 0;
-    /* blur navbar copy from SO*/
-    backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-
+    backdrop-filter: blur(10px);
 }
 
 ul {
@@ -42,11 +42,12 @@ li {
     padding-right: 8vw;
 }
 
-/* select all li except first one */
+/* Select all li except the first one */
 li:not(:first-child) {
     transform: translateX(260px);
 }
 
+/* Logo Styles */
 .logo {
     width: 40vh;
     position: absolute;
@@ -54,53 +55,42 @@ li:not(:first-child) {
     transform: translate(-67%, -16.7vh);
 }
 
-.foot {
-    /* display: absolute; */
-    /* margin-top: 50vh; */
-    bottom: 0;
-    width: 100%;
-}
-
+/* Main Content Styles */
 main {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
-    /* height: 100vh; */
-    width: 100%;
-    /* background-color: #72D34F; */
     margin-top: 5vh;
     margin-bottom: 5vh;
 }
 
+/* Heading Styles */
 .heading {
     font-size: 5vh;
     color: #72D34F;
 }
 
+/* Grid Styles */
 .grid {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     grid-gap: 2rem;
-    padding : 4rem;
-    /* background-color: black; */
+    padding: 4rem;
 }
 
+/* Adjust grid for smaller screens */
 .grid:nth-of-type(2) {
     grid-template-columns: repeat(4, 1fr);
 }
 
+/* Individual Grid Item Styles */
 .grid div {
     width: calc(20vh / 6 + 50vw / 6);
     height: calc(20vh / 6 + 50vw / 6);
-    /* height: ; */
-    /* background-color: white ; */
-    /* box shadow no offset high blur*/
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
     transition: ease 0.4s;
-    /* color: #fff; */
-    /* padding: 1rem; */
     outline: 3px solid #72D34F;
     outline-offset: 3px;
     border-radius: 1000px;
@@ -111,102 +101,127 @@ main {
     place-items: center;
 }
 
+/* Hover Styles for Grid Items */
 .grid div:hover {
     background-color: #72D34F;
     transition: linear 0.1s;
 }
 
-.grid div:not(hover) {
+/* Styles for non-hovered Grid Items */
+.grid div:not(:hover) {
     background-color: white;
     transition: linear background-color 2.5s;
 }
 
+/* Selection Styles for Grid Items */
 grid div::selection {
     background-color: black;
 }
 
-nav li a{
+/* Navigation Link Styles */
+nav li a {
     text-decoration: none;
     color: white;
     cursor: pointer;
     transition: ease 1s;
 }
-nav li a:hover{
+
+/* Hover Styles for Navigation Links */
+nav li a:hover {
     text-shadow: 1px 1px black;
     font-size: 2.5vh;
 }
 
-.foot{
-    display: flex;
-    /* margin-top: 100px; */
-    background: #72D34F;
-    /* height: 550px; */
-    padding: 35px;
-    /* justify-content: center; */
+/* Footer Styles */
+.foot {
+    bottom: 0;
+    width: 100%;
 }
-.about p{
+
+/* About Section Styles */
+.about p {
     margin-top: 10px;
     font-weight: 500;
     color: rgb(109, 92, 92);
 }
-.about ul li img{
+
+/* Footer Names List Styles */
+.about ul li img {
     width: 240px;
     height: 180px;
 }
-.about ul{
+
+.about ul {
     transform: translateX(-100px);
     margin-top: 20px;
 }
-.about ul li{
+
+/* Footer Names Item Styles */
+.about ul li {
     width: 255px;
     border: 8px solid white;
     height: 195px;
     border-radius: 10px;
 }
-.about ul li h3{
-    transform: translate(5px,-52px);
+
+/* Footer Names Heading Styles */
+.about ul li h3 {
+    transform: translate(5px, -52px);
 }
-.about ul li a{
+
+/* Footer Names Link Styles */
+.about ul li a {
     text-decoration: none;
     color: white;
 }
-.about ul li:hover{
+
+/* Hover Styles for Footer Names Items */
+.about ul li:hover {
     cursor: pointer;
     box-shadow: 2px 2px 5px 5px rgb(77, 70, 70);
 }
-.about h1{
+
+/* Footer Heading Styles */
+.about h1 {
     color: rgb(50, 108, 100);
 }
 
-/* media query */
+/* Media Query for Responsive Design */
 @media screen and (max-width: 768px) {
     .grid {
         grid-template-columns: repeat(4, 1fr);
     }
+
     .grid:nth-of-type(2) {
         grid-template-columns: repeat(2, 1fr);
     }
+
     .grid div {
         width: calc(20vh / 6 + 50vw / 6);
         height: calc(20vh / 6 + 50vw / 6);
     }
+
     .grid div:hover {
         background-color: #72D34F;
         transition: linear 0.1s;
     }
-    .grid div:not(hover) {
+
+    .grid div:not(:hover) {
         background-color: white;
         transition: linear background-color 2.5s;
     }
+
     .grid div::selection {
         background-color: black;
     }
+
     .logo {
         width: 40vh;
         position: absolute;
         left: 100%;
         transform: translate(-40%, -16.7vh);
     }
+
     li:not(:first-child) {
         display: none;
     }

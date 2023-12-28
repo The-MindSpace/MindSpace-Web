@@ -71,7 +71,7 @@ git push -u origin <your_branch_name>
 
 ## License
 
-MindSpace is licensed under the MIT License. See the LICENSE file for more details.
+MindSpace is licensed under the CC0 1.0 Universal License. See the LICENSE file for more details.
 
 <h1 id="prs">Issues & Pull Requests</h1>
 
@@ -79,7 +79,7 @@ Before making pull requests please look at our contributing guidelines (coming s
 
 # License & Copyright
 
-The code is this repo is licensed under the <a href="https://github.com/The-MindSpace/MindSpace-Web/blob/master/LICENSE">MIT License</a>. Feel free to use and share it as per the license.
+The code is this repo is licensed under the <a href="https://github.com/The-MindSpace/MindSpace-Web/blob/master/LICENSE">CC0 1.0 Universal License</a>. Feel free to use and share it as per the license.
 
 # ✨ Contributors
 

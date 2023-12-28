@@ -24,8 +24,8 @@ nav {
     padding: 2rem;
     width: 100%;
     top: 0;
-    -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
 }
 
 ul {

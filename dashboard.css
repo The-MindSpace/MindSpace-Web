@@ -1,14 +1,19 @@
+/* Your CSS code here */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
 }
+
 body {
     width: 100vw;
     overflow-x: hidden;
     scroll-behavior: smooth;
 }
+
+/* Rest of your CSS styles go here */
+
 
 nav {
     position: sticky;
@@ -23,8 +28,8 @@ nav {
     width: 100%;
     top: 0;
     /* blur navbar copy from SO*/
-    backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
 
 }
 

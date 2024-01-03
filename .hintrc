@@ -1,0 +1,13 @@
+{
+  "extends": [
+    "development"
+  ],
+  "hints": {
+    "compat-api/css": "off",
+    "disown-opener": "off",
+    "axe/text-alternatives": "off",
+    "css-prefix-order": "off",
+    "button-type": "off",
+    "axe/keyboard": "off"
+  }
+}

@@ -7,7 +7,12 @@
 body {
     width: 100vw;
     overflow-x: hidden;
+    overflow-y: scroll;
     scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+    display: none;
 }
 
 nav {
@@ -15,16 +20,16 @@ nav {
     z-index: 20;
     background-color: #72D34F;
     color: #fff;
-    height: 10vh;
+    height: 12vh;
     font-size: 2.5vh;
     font-weight: 900;
     padding: 2rem;
-    /* position: absolute; */
     width: 100%;
     top: 0;
-    /* blur navbar copy from SO*/
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 
 }
 
@@ -55,8 +60,6 @@ li:not(:first-child) {
 }
 
 .foot {
-    /* display: absolute; */
-    /* margin-top: 50vh; */
     bottom: 0;
     width: 100%;
 }
@@ -77,6 +80,8 @@ main {
 .heading {
     font-size: 5vh;
     color: #72D34F;
+    cursor: default;
+    animation: fadeIn 1s ease-in-out;
 }
 
 .grid {
@@ -84,7 +89,6 @@ main {
     grid-template-columns: repeat(8, 1fr);
     grid-gap: 2rem;
     padding : 4rem;
-    /* background-color: black; */
 }
 
 .grid:nth-of-type(2) {
@@ -94,17 +98,12 @@ main {
 .grid div {
     width: calc(20vh / 6 + 50vw / 6);
     height: calc(20vh / 6 + 50vw / 6);
-    /* height: ; */
-    /* background-color: white ; */
-    /* box shadow no offset high blur*/
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
     transition: ease 0.4s;
-    /* color: #fff; */
-    /* padding: 1rem; */
     outline: 3px solid #72D34F;
     outline-offset: 3px;
     border-radius: 1000px;
-    color: white;
+    color: #72D34F;
     font-size: 2vh;
     font-weight: 700;
     display: grid;
@@ -112,17 +111,68 @@ main {
 }
 
 .grid div:hover {
+    color: white;
+    cursor: pointer;
+    font-size: larger;
+    outline-offset: 5px;
+    transition: linear 0.2s;
     background-color: #72D34F;
-    transition: linear 0.1s;
+    outline: 5px solid #72D34F;
 }
 
-.grid div:not(hover) {
+.grid div:not(hover), .grid2 div:not(hover) {
     background-color: white;
     transition: linear background-color 2.5s;
 }
 
-grid div::selection {
+.grid div::selection, .grid2 div::selection {
     background-color: black;
+}
+
+#bookimg {
+    height: 40vh;
+}
+
+.grid2 {
+    display: grid;
+    grid-gap: 2rem;
+    padding: 4rem;
+    align-items: center;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.grid2 div {
+    display: grid;
+    color: #72D34F;
+    font-weight: bolder;
+    outline-offset: 3px;
+    border-radius: 10px;
+    place-items: center;
+    align-items: center;
+    transition: ease 0.4s;
+    outline: 3px solid #72D34F;
+    box-shadow: rgba(0, 0, 0, 0.3);
+    width: calc(20vh / 4 + 50vw / 4);
+    height: calc(20vh / 3 + 50vw / 3);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.grid2 div:hover{
+    color: white;
+    cursor: pointer;
+    font-size: larger;
+    outline-offset: 5px;
+    transition: linear 0.2s;
+    outline: 5px solid #72D34F;
+}
+
+.left{
+    animation: slideIn 1s ease-in-out;
+}
+
+.right{
+    animation: slideOut 1s ease-in-out;
 }
 
 nav li a{
@@ -137,12 +187,11 @@ nav li a:hover{
 }
 
 .foot{
-    display: flex;
-    /* margin-top: 100px; */
-    background: #72D34F;
-    /* height: 550px; */
     padding: 35px;
-    /* justify-content: center; */
+    display: flex;
+    background: #72D34F;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
 .about p{
     margin-top: 10px;
@@ -154,31 +203,32 @@ nav li a:hover{
     height: 180px;
 }
 .about ul{
-    transform: translateX(-100px);
     margin-top: 20px;
+    transform: translateX(28%);
 }
 .about ul li{
     width: 255px;
-    border: 8px solid white;
     height: 195px;
     border-radius: 10px;
+    border: 8px solid white;
 }
 .about ul li h3{
-    transform: translate(5px,-52px);
+    transform: translate(5px,-60px);
 }
 .about ul li a{
-    text-decoration: none;
     color: white;
+    text-decoration: none;
 }
 .about ul li:hover{
     cursor: pointer;
     box-shadow: 2px 2px 5px 5px rgb(77, 70, 70);
 }
 .about h1{
-    color: rgb(50, 108, 100);
+    color: white;
+    transform: translateX(60%);
 }
 
-/* media query */
+/* Key Frames */
 @media screen and (max-width: 768px) {
     .grid {
         grid-template-columns: repeat(4, 1fr);
@@ -211,6 +261,7 @@ nav li a:hover{
         display: none;
     }
 }
+
 
 
 /* back to top button styles */
@@ -251,3 +302,5 @@ body.scroll-down .back-to-top {
         transform: translateY(0);
     }
 }
+
+

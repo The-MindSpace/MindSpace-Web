@@ -262,43 +262,45 @@ nav li a:hover{
     }
 }
 
-/* Animations */
-@keyframes slideIn {
+
+
+/* back to top button styles */
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #213c15;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 24px;
+    display: none; /* hide by default */
+    transition: background-color 0.3s, transform 0.3s;
+    z-index: 999; 
+    animation: fadeInUp 0.5s ease; /* Entrance animation */
+}
+
+.back-to-top:hover {
+    background-color: #3a8f0f;
+    transform: scale(1.1); /* Add a slight scale effect on hover */
+}
+
+/* show the button when user scrolls down */
+body.scroll-down .back-to-top {
+    display: block;
+}
+/* Entrance animation keyframes */
+@keyframes fadeInUp {
     from {
-      transform: translateX(-100%);
+        opacity: 0;
+        transform: translateY(20px);
     }
-  
     to {
-      transform: translateX(0);
+        opacity: 1;
+        transform: translateY(0);
     }
-  }
-  
-  @keyframes slideOut {
-    from {
-      transform: translateX(100%);
-    }
-  
-    to {
-      transform: translateX(0);
-    }
-  }
-  
-  @keyframes slideDown {
-    from {
-      transform: translateY(-100%);
-    }
-  
-    to {
-      transform: translateY(0);
-    }
-  }
-  
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-  
-    to {
-      opacity: 1;
-    }
-  }
+}
+
+

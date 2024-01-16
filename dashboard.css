@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
     font-family: 'Inter', sans-serif;
 }
 body {
@@ -226,6 +227,21 @@ nav li a:hover{
 .about h1{
     color: white;
     transform: translateX(60%);
+}
+#scrollup{
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: greenyellow;
+    color: white;
+    cursor: pointer;
+    padding: 7px 10px 7px 10px;
+    border-radius: 50%;
+    font-size: 18px;
 }
 
 /* Key Frames */

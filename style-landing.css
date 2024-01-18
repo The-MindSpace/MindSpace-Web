@@ -44,32 +44,36 @@ body{
     text-align: center;
     align-items: center;
     justify-content: center;
-    color: #657085;
+    color: #0ca3a6;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .wrapper .dynamic-text{
     margin-left: -20px;
     margin-top: 150px;
     height: 90px;
-    line-height: 0px;
+    line-height: 100px;
     overflow: hidden;
 }
 
 .dynamic-text li{
     list-style: none;
-    font-size: 25px;
+    font-size: 50px;
     font-weight: 500;
+
     /* text-shadow: 1px 1px black; */
     font-weight: 700;
     position: relative;
-    top: 0;
-    line-height: 100px;
-    animation: slideup 450s steps(100) infinite;
+    right:100%;
+    animation: slideright 20s linear infinite;
 }
 
-@keyframes slideup {
+@keyframes slideright {
+    0%{
+        right:0;
+    }
     100%{
-        top: -10000px;
+        right: -100%
     }
 }
 

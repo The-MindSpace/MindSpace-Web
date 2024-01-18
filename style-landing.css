@@ -27,10 +27,20 @@ body{
     margin-top: -45.821313240043054vh;
     /* text shadow blur*/
     text-shadow: 0 0 0.0458557588805167vh black;
+    animation: textAnimation 2s ease-in-out infinite alternate;
+}
+@keyframes textAnimation {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.1);
+    }
 }
 .mind{
     color: #72d34f;
 }
+
 .space{
     color: #edeff4;
 }
@@ -39,7 +49,7 @@ body{
 }
 
 /* ------------------------------------------------------------------ quotes ------------------------------------------------------------------------- */
-.wrapper{
+ .wrapper{
     display: block;
     text-align: center;
     align-items: center;
@@ -59,7 +69,7 @@ body{
     list-style: none;
     font-size: 25px;
     font-weight: 500;
-    /* text-shadow: 1px 1px black; */
+     text-shadow: 1px 1px black; 
     font-weight: 700;
     position: relative;
     top: 0;
@@ -67,27 +77,63 @@ body{
     animation: slideup 450s steps(100) infinite;
 }
 
-@keyframes slideup {
-    100%{
-        top: -10000px;
+.dynamic-text {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+  }
+  
+  .dynamic-text li {
+    animation: slideUp 5s linear infinite;
+    opacity: 0;
+  }
+  
+  /* Define the animation keyframes */
+  @keyframes slideUp {
+    0% {
+      transform: translateY(100%);
+      opacity: 0;
     }
+    10% {
+      opacity: 1;
+    }
+    90% {
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+  }
+  
+
+
+
+/* Small devices (phones) */
+@media only screen and (max-width: 600px) {
+    
+    .heading h1 {
+        font-size: 28px; 
+    }
+
+    .dynamic-text li span {
+        font-size: 14px; 
+    }
+
+    
 }
 
-.dynamic-text li span{
-    position: relative;
-}
 
-.dynamic-text li span::after{
-    content: "";
-    position: absolute;
-}
+
 
 /* ---------------------------------- ENTRY BUTTON ------------------------------------- */
 .button{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 50px;
+    margin-top: 20px;
+    margin-bottom: 30px;
 }
 button{
     background-color: #72d34f;
@@ -111,3 +157,13 @@ button a{
     text-decoration: none;
     color: white;
 }
+.fade-element {
+    text-align: center;
+    transition: opacity 0.5s ease; /* Define the transition */
+  }
+  
+  .fade-element:hover {
+    opacity: 0.5; /* Change the opacity on hover */
+  }
+  
+  

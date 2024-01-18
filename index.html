@@ -17,7 +17,7 @@
 </head>
 <body>
     <!-------------------------------------------- Background image --------->
-    <div data-aos="fade-in" data-aos-duration="1000" class="bg-img-land"><img src="img/pexels-pixabay-160994.jpg" ></div>
+    <div data-aos="fade-in" data-aos-duration="1000" class="bg-img-land"><img src="https://media.istockphoto.com/id/658917624/photo/happy-family-enjoying-while-sitting-on-stone-wall.jpg?s=612x612&w=0&k=20&c=1wvYb7gIdPWocUY6805YvSreTWzrWDCB69FX0UxOi7g=" ></div>
 
     <!------------------------------------------------------- Heading and subtitle -->
     <div class="heading-subtitle">
@@ -26,6 +26,7 @@
             <h1 class="space" data-aos="fade-left" data-aos-duration="1000">Space</h1>
         </div>
         <img class="find" src="img/Finding peace of mind, one space at a time.png" alt="">
+       
     </div>
 
     <!----------------------------------------------------------------------- QUOTES ------------------------------------------------------------>
@@ -53,7 +54,7 @@
     </div>
 
     <!--------------------------------------------------------------------- ENTRY BUTTON ---------------------------------------------------------------->
-    <div data-aos="fade-up" data-aos-duration="1000" class="button">
+    <div class="button fade-element">
         <button><a href="dashboard.html">Find your Space</a></button>
     </div>
     <!-- aos script -->
@@ -61,5 +62,30 @@
     <script>
         AOS.init();
     </script>
+    <script>
+        // Retrieve the list of quotes
+const quotes = document.querySelectorAll('.dynamic-text li');
+
+let index = 0;
+
+function displayQuotes() {
+  quotes.forEach(quote => {
+    quote.style.display = 'none';
+  });
+  
+  quotes[index].style.display = 'block';
+  
+  index++;
+  if (index === quotes.length) {
+    index = 0;
+  }
+  
+  setTimeout(displayQuotes, 4000); // Change the delay time (11000ms = 11s) based on your animation
+}
+
+displayQuotes();
+
+    </script>
 </body>
 </html>
+<!-- data-aos="fade-up" data-aos-duration="1000" -->

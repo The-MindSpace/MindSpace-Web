@@ -45,33 +45,36 @@ body{
     align-items: center;
     justify-content: center;
     color: #2cbdc2;
+    overflow: hidden;
 }
 
 .wrapper .dynamic-text{
-    margin-left: -20px;
+    display: flex;
+    padding-inline-start: 0;
     margin-top: 150px;
     height: 90px;
-    line-height: 100px;
-    overflow: hidden;
+    line-height: 90px;
+    animation: slideright 30s linear infinite;
+    width: 100%;
 }
 
 .dynamic-text li{
     list-style: none;
     font-size: 50px;
-    font-weight: 500;
-    /* text-shadow: 1px 1px black; */
     font-weight: 700;
-    position: relative;
-    right:100%;
-    animation: slideright 30s linear infinite;
+    margin-right: 20px;
+    white-space: nowrap;
+ 
 }
 
 @keyframes slideright {
     0%{
-        right:0;
+        transform: translateX(0%);
+        
+
     }
     100%{
-         right: -100%;
+        transform: translateX(100%);
     }
 }
 

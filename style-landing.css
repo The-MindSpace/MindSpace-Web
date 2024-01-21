@@ -50,8 +50,10 @@ body {
     text-align: center;
     align-items: center;
     justify-content: center;
-    color: #657085;
+    color: #2cbdc2;
+   
 }
+
 
 .dynamic-text {
     margin-left: -20px;
@@ -87,21 +89,7 @@ body {
     position: absolute;
 }
 
-/* Entry Button */
-.button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 50px;
-}
 
-/* Entry Button */
-.button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 50px;
-}
 
 /* Entry Button */
 .button {

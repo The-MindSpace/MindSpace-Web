@@ -44,32 +44,37 @@ body{
     text-align: center;
     align-items: center;
     justify-content: center;
-    color: #657085;
+    color: #2cbdc2;
+    overflow: hidden;
 }
 
 .wrapper .dynamic-text{
-    margin-left: -20px;
+    display: flex;
+    padding-inline-start: 0;
     margin-top: 150px;
     height: 90px;
-    line-height: 0px;
-    overflow: hidden;
+    line-height: 90px;
+    animation: slideright 30s linear infinite;
+    width: 100%;
 }
 
 .dynamic-text li{
     list-style: none;
-    font-size: 25px;
-    font-weight: 500;
-    /* text-shadow: 1px 1px black; */
+    font-size: 50px;
     font-weight: 700;
-    position: relative;
-    top: 0;
-    line-height: 100px;
-    animation: slideup 450s steps(100) infinite;
+    margin-right: 20px;
+    white-space: nowrap;
+ 
 }
 
-@keyframes slideup {
+@keyframes slideright {
+    0%{
+        transform: translateX(0%);
+        
+
+    }
     100%{
-        top: -10000px;
+        transform: translateX(100%);
     }
 }
 

@@ -50,7 +50,8 @@ body {
     text-align: center;
     align-items: center;
     justify-content: center;
-    color: #657085;
+    color: #2cbdc2;
+    overflow: hidden;
 }
 
 .dynamic-text {
@@ -86,7 +87,6 @@ body {
     content: "";
     position: absolute;
 }
-
 /* Entry Button */
 .button {
     display: flex;
@@ -103,13 +103,7 @@ body {
     margin-top: 50px;
 }
 
-/* Entry Button */
-.button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 50px;
-}
+
 
 button {
     background-color: #72d34f;

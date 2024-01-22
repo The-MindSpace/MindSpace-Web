@@ -1,45 +1,51 @@
-*{
+* {
     font-family: 'Inter', sans-serif;
-}
-body{
-    padding: 0;
     margin: 0;
+    padding: 0;
 }
-/* ----------------background image-------------------------------- */
-.bg-img-land img{
+
+body {
+    overflow: hidden; /* Prevent scrolling on the body */
+}
+
+/* Background image */
+.bg-img-land img {
     filter: blur(0.7458557588805167vh);
     width: 100vw;
     height: 70vh;
 }
 
-/* --------------------------------------------------------- heading wala hissa --------------------------------------------------------------- */
-.heading-subtitle{
+/* Heading and subtitle */
+.heading-subtitle {
     text-align: center;
     display: block;
     transform: translateZ(21.52852529601722vh);
 }
-.heading{
+
+.heading {
     display: flex;
     text-align: center;
     justify-content: center;
     font-size: 5.382131324004305vh;
     font-weight: 900;
     margin-top: -45.821313240043054vh;
-    /* text shadow blur*/
     text-shadow: 0 0 0.0458557588805167vh black;
 }
-.mind{
+
+.mind {
     color: #72d34f;
 }
-.space{
+
+.space {
     color: #edeff4;
 }
-.find{
-    transform: translateY(-6.458557588805167vh);
+
+.find {
+    transform: translateY(-0.458557588805167vh);
 }
 
-/* ------------------------------------------------------------------ quotes ------------------------------------------------------------------------- */
-.wrapper{
+/* Quotes */
+.wrapper {
     display: block;
     text-align: center;
     align-items: center;
@@ -48,71 +54,78 @@ body{
     overflow: hidden;
 }
 
-.wrapper .dynamic-text{
-    display: flex;
-    padding-inline-start: 0;
+.dynamic-text {
+    margin-left: -20px;
     margin-top: 150px;
     height: 90px;
-    line-height: 90px;
-    animation: slideright 30s linear infinite;
-    width: 100%;
+    line-height: 0px;
+    overflow: hidden;
 }
 
-.dynamic-text li{
+.dynamic-text li {
     list-style: none;
-    font-size: 50px;
+    font-size: 25px;
+    font-weight: 500;
     font-weight: 700;
-    margin-right: 20px;
-    white-space: nowrap;
- 
+    position: relative;
+    top: 0;
+    line-height: 100px;
+    animation: slideup 450s steps(100);
 }
 
-@keyframes slideright {
-    0%{
-        transform: translateX(0%);
-        
-
-    }
-    100%{
-        transform: translateX(100%);
+@keyframes slideup {
+    100% {
+        top: -10000px;
     }
 }
 
-.dynamic-text li span{
+.dynamic-text li span {
     position: relative;
 }
 
-.dynamic-text li span::after{
+.dynamic-text li span::after {
     content: "";
     position: absolute;
 }
-
-/* ---------------------------------- ENTRY BUTTON ------------------------------------- */
-.button{
+/* Entry Button */
+.button {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 50px;
 }
-button{
+
+/* Entry Button */
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+
+
+button {
     background-color: #72d34f;
     width: 250px;
     height: 55px;
-    border-style: none;
+    border: none;
     border-radius: 12px;
     color: white;
-    font-size: 25px;
+    font-size: 18px; /* Adjusted font size */
     font-weight: 700;
     cursor: pointer;
-    transition: 0.5s;
+    transition: all 0.3s ease; /* Added smooth transition */
 }
-button:hover{
+
+button:hover {
     width: 275px;
     height: 60px;
-    background-color: green;
+    background-color: #4aaf3a; /* Adjusted hover color */
     border-radius: 16px;
 }
-button a{
+
+button a {
     text-decoration: none;
     color: white;
 }

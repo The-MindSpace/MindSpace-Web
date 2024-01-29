@@ -187,6 +187,137 @@ nav li a:hover{
     font-size: 2.5vh;
 }
 
+/* contact design */
+
+
+
+.contact h2 {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact .h2 {
+    width: 100%;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.contact p {
+    font-size: 20px;
+    margin-bottom: 1.5rem;
+}
+
+.contact-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    margin-bottom: 1rem;
+}
+
+.contact-list li {
+    list-style-type: none;
+    font-size: 20px;
+    margin: 1rem;
+    text-align: left;
+    justify-content: left;
+}
+
+.contact-list li i{
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 600;
+    color: greenyellow;
+}
+.contact-list li i:hover{
+    color: green;
+    cursor: pointer;
+}
+
+
+.contact-icons i{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background: transparent;
+    border: 0.2rem solid var(--main-color);
+    border-radius: 50%;
+    margin: 3rem 1.5rem 3rem;
+    font-size: 2rem;
+    color: greenyellow;
+}
+
+.contact-icons i:hover{
+    background: transparent;
+    color: green;
+    box-shadow: 0 0 20px var(--main-color);
+}
+
+.contact form {
+    margin-top: 1.2rem;
+    max-width: 70rem;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.contact form .input-box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact form .input-box input,
+.contact form textarea {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1rem;
+    color: black;
+    background: transparent;
+    border-radius: 0.8rem;
+    margin: 0.7rem 0;
+}
+
+.contact form .input-box input {
+    width: 49%;
+
+}
+
+.contact form textarea {
+    resize: none;
+}
+
+.contact .btn {
+    margin-top: 2rem;
+    cursor: pointer;
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 1rem 2rem;
+    background: greenyellow;
+    border-radius: 15px;
+    color: black;
+    border-bottom: green;
+}
+
+.contact .btn:hover {
+    background: green;
+    color: white;
+    transition: 0.3s ease-in-out;
+}
+
+footer p{
+    padding: 35px;
+    display: flex;
+    background: #72D34F;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+
 .foot {
     padding: 35px;
     display: flex;

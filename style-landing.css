@@ -136,9 +136,10 @@ button a {
     width: 4rem;
     height: 4rem;
     background: transparent;
+    border: 0.2rem solid var(--main-color);
     border-radius: 50%;
     font-size: 2rem;
-    color: black;
+    color: white;
     margin-top: 1rem;
 }
 

@@ -187,6 +187,153 @@ nav li a:hover{
     font-size: 2.5vh;
 }
 
+/* contact design */
+
+
+
+.contact h2 {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    display: flex;
+    color: #72D34F;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact .h2 {
+    width: 100%;
+    font-size: 2rem;
+    font-weight: 500;
+    color: #72D34F;
+}
+
+.contact p {
+    font-size: 20px;
+    margin-bottom: 1.5rem;
+    color: #72D34F;
+}
+
+.contact-list{
+    display: flex;
+    flex-wrap: wrap;
+    color: #72D34F;
+    justify-content: left;
+    margin-bottom: 1rem;
+}
+
+.contact-list li {
+    list-style-type: none;
+    font-size: 20px;
+    color: #72D34F;
+    margin: 1rem;
+    text-align: left;
+    justify-content: left;
+}
+
+.contact-list li i{
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 600;
+    color: #72D34F;
+}
+.contact-list li i:hover{
+    color: #72D34F;
+    cursor: pointer;
+}
+
+
+.contact-icons i{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background: transparent;
+    border: 0.2rem solid var(--main-color);
+    border-radius: 50%;
+    margin: 3rem 1.5rem 3rem;
+    font-size: 2rem;
+    color: #72D34F;
+}
+
+.contact-icons i:hover{
+    background: transparent;
+    color: #72D34F;
+    box-shadow: 0 0 20px var(--main-color);
+}
+
+.contact form {
+    margin-top: 1.2rem;
+    max-width: 70rem;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.contact form .input-box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact form .input-box input,
+.contact form textarea {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1rem;
+    color: white;
+    background: transparent;
+    border-radius: 0.8rem;
+    margin: 0.7rem 0;
+}
+
+.contact form .input-box input {
+    width: 49%;
+
+}
+
+.contact form textarea {
+    resize: none;
+}
+
+.contact .btn {
+    margin-top: 2rem;
+    cursor: pointer;
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 1rem 2rem;
+    background: #72D34F;
+    border-radius: 15px;
+    color:white;
+    border-bottom: #72D34F;
+}
+
+.contact .btn:hover {
+    background: #72D34F;
+    color: white;
+    transition: 0.3s ease-in-out;
+}
+
+footer p{
+    padding: 35px;
+    display: flex;
+    background-color: #72D34F;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    color: white;
+}
+
+.input-box div{
+    box-shadow: 0 0 10px 0#72D34F;
+    transition: ease 0.4s;
+    outline: 3px solid #72D34F;
+    outline-offset: 3px;
+    border-radius: 1000px;
+    color: #72D34F;
+    font-size: 2vh;
+    font-weight: 700;
+}
+
 .foot {
     padding: 35px;
     display: flex;
@@ -222,6 +369,7 @@ nav li a:hover{
 .foot-names {
     margin-top: 20px;
     display: flex;
+    
     justify-content: center;
 }
 
@@ -245,6 +393,7 @@ nav li a:hover{
 .foot-names h3 {
     position: relative;
     top: -50px;
+    
     text-align: center;
 }
 
@@ -258,6 +407,7 @@ nav li a:hover{
 
 h1 {
     transform: translateX(60%);
+    color: #72D34F;
 }
 
 #scrollup{
@@ -268,7 +418,7 @@ h1 {
     z-index: 99;
     border: none;
     outline: none;
-    background-color: greenyellow;
+    background-color:#72D34F;;
     color: white;
     cursor: pointer;
     padding: 7px 10px 7px 10px;
@@ -301,7 +451,7 @@ h1 {
         transition: linear background-color 2.5s;
     }
     .grid div::selection {
-        background-color: black;
+        background-color: #72D34F;;
     }
     .logo {
         width: 40vh;
@@ -321,7 +471,7 @@ h1 {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background-color: #213c15;
+    background-color: #72D34F;;
     color: white;
     border: none;
     border-radius: 50%;
@@ -335,7 +485,7 @@ h1 {
 }
 
 .back-to-top:hover {
-    background-color: #3a8f0f;
+    background-color: #72D34F;;
     transform: scale(1.1); /* Add a slight scale effect on hover */
 }
 

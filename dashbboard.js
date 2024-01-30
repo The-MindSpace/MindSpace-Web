@@ -11,6 +11,15 @@ document.addEventListener("scroll", function() {
     }
 });
 
+/*========== dark light mode ==========*/
+let darkModeIcon = document.querySelector('#darkMode-icon');
+
+darkModeIcon.onclick = () => {
+    document.querySelector("nav").style.color = "black";
+    darkModeIcon.classList.toggle('bx-sun');
+    document.body.classList.toggle('dark-mode');
+};
+
 // Function to scroll to the top when the button is clicked
 function scrollToTop() {
     window.scrollTo({

@@ -5,6 +5,27 @@
     scroll-behavior: smooth;
     font-family: 'Inter', sans-serif;
 }
+
+:root {
+    --bg-color: #fdfdfd;
+    --text-color: #333;
+    --main-color: #754ef9;
+    --white-color: #fdfdfd;
+    --shadow-color: rgba(0, 0, 0, .2);
+}
+
+.dark-mode {
+    background-color: #0b061f;
+    color: black;
+    --shadow-color: rgba(0, 0, 0, .7); 
+}
+
+#darkMode-icon {
+    font-size: 1.8rem;
+    color: var(--white-color);
+    cursor: pointer;
+}
+
 body {
     width: 100vw;
     overflow-x: hidden;
@@ -18,10 +39,10 @@ body::-webkit-scrollbar {
 
 nav {
     position: sticky;
-    z-index: 20;
+    z-index: 80;
     background-color: #72D34F;
     color: #fff;
-    height: 12vh;
+    height: 19vh;
     font-size: 2.5vh;
     font-weight: 900;
     padding: 2rem;

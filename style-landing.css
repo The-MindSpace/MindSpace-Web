@@ -87,23 +87,22 @@ body {
     content: "";
     position: absolute;
 }
-/* Entry Button */
-.button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 50px;
-}
 
 /* Entry Button */
 .button {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 50px;
+    margin-top: 20px;
 }
 
-
+/* Entry Button
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+} */
 
 button {
     background-color: #72d34f;
@@ -115,7 +114,7 @@ button {
     font-size: 18px; /* Adjusted font size */
     font-weight: 700;
     cursor: pointer;
-    transition: all 0.3s ease; /* Added smooth transition */
+    transition: all 0.25s ease; /* Added smooth transition */
 }
 
 button:hover {

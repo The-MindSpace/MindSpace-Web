@@ -85,6 +85,42 @@ main {
     animation: fadeIn 1s ease-in-out;
 }
 
+#appln{
+    display: flex;
+    align-items: center;
+    margin-right: 30rem;
+    margin-left: 5rem;
+}
+
+#book{
+    display: flex;
+    align-items: center;
+    margin-right: 23rem;
+    margin-left: 15rem;  
+}
+
+#org{
+    color: #72D34F;
+    display: flex;
+    align-items: center;
+    margin-right: 25rem;
+    margin-left: 10rem;  
+}
+
+#art{
+    display: flex;
+    align-items: center;
+    margin-right: 23rem;
+    margin-left: 15rem;  
+}
+
+#conf{
+    display: flex;
+    align-items: center;
+    margin-right: 27rem;
+    margin-left: 3rem;  
+}
+
 .grid {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
@@ -355,4 +391,8 @@ body.scroll-down .back-to-top {
     }
 }
 
-
+#book{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

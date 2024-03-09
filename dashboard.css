@@ -11,6 +11,32 @@ body {
     overflow-y: scroll;
     scroll-behavior: smooth;
 }
+/* Heading style to center with specific ID */
+#conf {
+    text-align: center;
+
+        text-align: center;
+        display: block;
+        margin-left: center;
+        margin-right: center
+        ;
+        margin-left: left -50px;
+    margin-right: left;
+}
+
+#heading{
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 5.382131324004305vh;
+    font-weight: 900;
+    margin-top: -45.821313240043054vh;
+    text-shadow: 0 0 0.0458557588805167vh black;
+}
+
+/* Rest of your CSS... */
+
 
 body::-webkit-scrollbar {
     display: none;

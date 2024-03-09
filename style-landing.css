@@ -1,6 +1,7 @@
-* {
+*{
     font-family: 'Inter', sans-serif;
-    margin: 0;
+}
+body{
     padding: 0;
 }
 
@@ -11,7 +12,7 @@ body {
 /* Background image */
 .bg-img-land img {
     filter: blur(0.7458557588805167vh);
-    width: 100vw;
+    width: 100%;
     height: 70vh;
 }
 
@@ -31,35 +32,15 @@ body {
     margin-top: -45.821313240043054vh;
     text-shadow: 0 0 0.0458557588805167vh black;
 }
-.heading {
-    display: flex;
-    justify-content: flex-start;
-    font-size: 5.382131324004305vh;
-    font-weight: 900;
-    margin-top: -45.821313240043054vh;
-    text-shadow: 0 0 0.0458557588805167vh black;
-    margin-left: 5%; /* Adjust the left margin as needed */
-}
-
-/* Rest of your CSS... */
-
-
-/* Rest of your CSS... */
-
-.heading {
-    text-align: center;
-}
-
-.mind {
+.mind{
     color: #72d34f;
 }
 
 .space {
     color: #edeff4;
 }
-
-.find {
-    transform: translateY(-0.458557588805167vh);
+.find{
+    transform: translateY(-6.458557588805167vh);
 }
 
 /* Quotes */
@@ -72,7 +53,7 @@ body {
     overflow: hidden;
 }
 
-.dynamic-text {
+.wrapper .dynamic-text{
     margin-left: -20px;
     margin-top: 150px;
     height: 90px;
@@ -105,25 +86,15 @@ body {
     content: "";
     position: absolute;
 }
-/* Entry Button */
-.button {
+
+/* ---------------------------------- ENTRY BUTTON ------------------------------------- */
+.button{
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 50px;
 }
-
-/* Entry Button */
-.button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 50px;
-}
-
-
-
-button {
+button{
     background-color: #72d34f;
     width: 250px;
     height: 55px;
@@ -146,4 +117,22 @@ button:hover {
 button a {
     text-decoration: none;
     color: white;
+}
+
+/* Media queries */
+@media screen and (max-width: 768px) {
+    .heading {
+        font-size: 3rem;
+    }
+
+    .dynamic-text li {
+        font-size: 18px;
+        line-height: 50px;
+    }
+
+    button {
+        width: 200px;
+        height: 45px;
+        font-size: 20px;
+    }
 }
